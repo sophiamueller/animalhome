@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+    <title>Animal Home</title>
+</head>
+<body>
+    <html>
+        <body>
+            <div class="container">
+                <div class="header">
+                  <h1>Tier-Häuser</h1>
+                  <h3>Tierheim Hamburg-Barmbek</h3>
+                  </div>
+                <div>
+                  <img src="images/logo-hamburger-tierschutzverein.jpeg" class="logo" alt="Logo Tierheim Hamburg" height="auto">
+                  </div>
+
+                <div class="content">
+                  <h1>Hundehaus</h1>
+                  <p>Tippen um Tier zu suchen</p>
+                  <div id="searchWrapper">
+                    <input 
+                      type="text" 
+                      id="search-el" 
+                      placeholder="Kürzel: MA22003"/>
+                  </div>
+
+                  <ul id="no-animal-list">
+                  </ul>
+                  <p id="message"></p>  
+                  <btn id="list-btn" class="show">alle Einträge anzeigen</btn>
+                  <btn id="hide-list-btn" class="hide">Liste schließen</btn>
+
+                  <btn id="open-form-btn">Tier zur Liste hinzufügen</btn>
+                  <btn id="close-form-btn" class="hide">X Formular schließen X</btn>
+                  <section id="new-card-wrapper" class="hide animal-form">
+                    <form>
+                      <p>Tier hinzufügen:</p> 
+                      <input 
+                        type="text" 
+                        id="animal-input-el" 
+                        class="animalInput"
+                        placeholder="Name"/>
+  
+                      <input 
+                        id="ma-nr" 
+                        type="text" 
+                        placeholder="MA Nr."/>
+  
+                      <input 
+                        id="race"
+                        type="text" 
+                        placeholder="Tier-Rasse"/>
+  
+                        <btn id="add-btn" class="btn-big js-btn-add" type="submit">hinzufügen</btn>
+                        <btn id="delete-btn" class="btn-small js-btn-clear">Liste löschen</btn>
+                    </section>
+  
+                    <div class="results">
+                      <h2>Form Data</h2>
+                      <pre>Hula</pre>
+                    </div>
+  
+                    </div>
+                    <ul id="card-list">
+                    </ul>
+                  </div>
+                    </form>
+
+                <div class="footer">
+                  <p style="margin: 10px">Impressum</p>
+                  <p style="margin: 10px">Datenschutz</p>
+              </div>
+            </div>
+        </body>
+    </html>    
+    </div>  
+</body>
+<script src="main.js"></script>
+<script src="doghouse.json"></script>
+</html>

@@ -1,0 +1,263 @@
+
+h1 {
+    color: #00183b;
+    font-size: 23px;
+}
+
+h2 {
+    color:#e9ebf7;
+    font-size: 16px;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 12px;
+    margin: 5px;  
+}
+
+body {
+    background: #e9ebf7;
+    font-family:arial, "lucida console", sans-serif;
+  }
+  .container {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(12, 1fr);
+
+      grid-template-areas: 
+          "h h h h h h h h h h h l"
+          "c c c c c c c c c c c c"
+          "f f f f f f f f f f f f";
+  }
+  * {
+    box-sizing: border-box;}
+  
+.header {
+      grid-area: h;
+      padding-left: 20px;
+  }
+  
+.logo {
+      grid-area: l;
+      display: flex;
+      max-width: 20vh;
+  }
+  
+.content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-area: c;
+      padding: 20px;
+  }
+  
+.footer {
+      grid-area: f;
+      display: flex;
+      padding: 10px;
+  
+  }
+
+input[type=text] {
+    height: 2rem;
+    width:100%;
+    margin-bottom: 0.5rem;
+  }  
+#input-el {
+    display: inline-block;
+    outline:0;
+    text-align: center;
+    border: 2px solid #0b1333;
+    border-radius: 5px;
+    color: #0b1333;
+    padding: 10px;
+    margin: 15px;
+    max-width: 200px;
+  }
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    margin: 0 5px;
+}
+  
+btn {
+    display: inline-block;
+    outline:0;
+    text-align: center;
+    border: 2px solid #0b1333;
+    border-radius: 5px;
+    color: #0b1333;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+  }
+    btn:hover {
+    background: #cfd5fa;
+  }
+
+.hide{
+    display:none;
+
+    }
+    
+.show{
+    display:block;
+
+    }  
+#hide-list-btn {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}  
+  
+#no-animal-list {
+    display:none;
+}
+
+#animal-list {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 15px;
+}
+
+#card-list {
+  list-style-type: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.animals {
+    list-style-type: none;
+    background-color: #a8c2ff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        'name'
+        'email'
+        'username';
+    text-align: left;
+}
+
+section {
+    padding: 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+.animalInput[type=text] {
+    height: 2rem;
+    width:100%;
+    margin-bottom: 0.5rem;
+  }
+.animalInput[type=checkbox] {
+    margin-right: 0.5rem;
+  }
+  
+.btn-big {
+    width:40%;
+  }
+  
+.btn-small {
+    width:40%;
+  }
+  
+.list-container {
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.list-item {
+    background: whitesmoke;
+    margin:0.5rem 0;
+    padding: 5px ;
+    display: flex;  
+    align-items: flex-end;
+  }
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+a {
+    color: #5f9341;
+}
+  
+.done {
+    text-decoration: line-through;
+    color: darkgray;
+  }
+  
+
+
+
+
+  .contact-form label.inline {
+    display: inline-block;
+    margin-left: 0.25rem;
+  }
+  
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea{
+    display: block;
+    margin-top: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid green;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    transition: 150ms border-color linear;
+  }
+  
+  .contact-form input[type=checkbox],
+  .contact-form input[type=radio] {
+    display: inline-block;
+    width: auto;
+  }
+  
+  .contact-form input[type=checkbox]:not(:first-of-type),
+  .contact-form input[type=radio]:not(:first-of-type) {
+    margin-left: 1rem;
+  }
+  
+  .contact-form input:focus,
+  .contact-form input:active {
+    border-color: var(--color-gray-medium);
+  }
+  
+  .contact-form button {
+    display: block;
+    margin: 0.5rem 1rem 0;
+    padding: 0 1rem 0.125rem;
+    background-color: var(--color-gray-medium);
+    border: 0;
+    color: var(--color-lightest);
+    font-family: lato, sans-serif;
+    font-size: 100%;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    transition: 150ms all linear;
+  }
+  
+  .contact-form button:hover,
+  .contact-form button:active,
+  .contact-form button:focus {
+    background: var(--color-darkest);
+    cursor: pointer;
+  }
+  
